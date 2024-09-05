@@ -19,6 +19,11 @@ export const sidebarLinks = [
     route: "/payment-transfer",
     label: "Transfer Funds",
   },
+  {
+    imgURL: "/icons/money-send.svg",
+    route: "/invite-friends",
+    label: "Invite Friends",
+  },
 ];
 
 // good_user / good_password - Bank of America
