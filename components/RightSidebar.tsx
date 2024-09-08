@@ -38,11 +38,21 @@ const RightSideBar = ({ user, transactions, banks }: RightSidebarProps) => {
             {" "}
             <div className="relative z-10">
               {" "}
-              <Bankcard />
+              <Bankcard
+                key={banks[0].$id}
+                account={banks[0]}
+                userName={`${user.firstName} ${user.lastName}`}
+                showBalance={false}
+              />
             </div>
             {banks[1] && (
               <div className="absolute right-0 top-8 z-0 w-[90%]">
-                <Bankcard />
+                <Bankcard
+                  key={banks[1].$id}
+                  account={banks[1]}
+                  userName={`${user.firstName} ${user.lastName}`}
+                  showBalance={false}
+                />
               </div>
             )}
           </div>
